@@ -70,13 +70,11 @@ header{
     width: auto;
     float: left;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 #logo-text{
     float: left;
     padding: 20px;
-}
-#menu-nav{
 }
 
 #main-ul-nav{
@@ -84,11 +82,22 @@ header{
     list-style: none;
     padding: 20px;
 }
-#main-ul-nav li{
+#main-ul-nav li {
     display: inline;
-    padding-right: 15px;
+    padding: 10px 15px 10px 15px;
     font-size: 0.8em;
+    opacity: 0.6;
+    transition: opacity 0.5s, border 0.5s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 150px;
 }
+
+#main-ul-nav li:hover,
+#main-ul-nav li:active{
+    opacity: 1;
+    border: 1px solid #7EE1FF;
+}
+
 #logo-text a{
     letter-spacing: 5px;
 }
@@ -173,4 +182,36 @@ ion-icon{
 
 section p{
     font-size: 80%;
+}
+/*****************************************************************
+Food images styles
+*****************************************************************/
+
+
+.images-container{
+    list-style: none;
+    width: 100%;
+}
+.images-container li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.food-image{
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+.food-image img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.food-image img:hover{
+    transform: scale(1.05);
+    opacity: 1;
 }
