@@ -13,16 +13,18 @@ body{
 }
 
 header{
-    background-image: url("../images/header-background.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 241, 0.45)), url("../images/header-background.jpg");
     height: 100vh;
     background-position: center;
     background-size: cover;
 }
 
 #logo-image{
-    width: 100px;
-    height: auto;
+    height: 50px;
+    width: auto;
     float: left;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 #logo-text{
     float: left;
@@ -40,6 +42,9 @@ header{
     display: inline;
     padding-right: 15px;
     font-size: 0.8em;
+}
+#logo-text a{
+    letter-spacing: 5px;
 }
 
 #main-ul-nav li a,
@@ -63,13 +68,41 @@ header{
     font-style: normal;
 }
 
-.header-headline{
+.header-buttons{
+    margin-top: 20px;
     margin-left: 8.33%;
+    padding: 15px;
 }
 
-.button-{
-    color: #7EE1FF;
+.button:link,
+.button:visited{
+    display: inline-block;
+    padding: 10px 30px;
     text-decoration: none;
+    color: #7EE1FF;
+    font-weight: 300;
+    border-radius: 150px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.button-order:link,
+.button-order:visited{
+    background: #0000F1;
+    border: 1px solid #0000F1;
+}
+.button-menu:link,
+.button-menu:visited{
+    border: 1px solid #7EE1FF;
+}
+.button:hover,
+.button:active{
+    background: #0000BE;
+    border: 1px solid #0000F1;
+}
+
+nav{
+    height: 70px;
+    padding: 25px;
 }
 
 
