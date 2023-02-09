@@ -1,3 +1,7 @@
+/*****************************************************************
+Common styles
+*****************************************************************/
+
 *{
     margin: 0;
     padding: 0;
@@ -6,11 +10,53 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    color: #7EE1FF;
     font-weight: 400;
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 3%;
+}
+
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after{
+    display: block;
+    background-color: #7EE1FF;
+    height: 2px;
+    content: " ";
+    width: 150px;
+    margin: 30px auto 0 auto;
+}
+
+section{
+    padding: 100px 0;
+}
+
+/*****************************************************************
+Header styles
+*****************************************************************/
 
 header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 241, 0.45)), url("../images/header-background.jpg");
@@ -58,6 +104,7 @@ header{
     padding-top: 150px;
 }
 #header-title{
+    color: #7EE1FF;
     margin-left: 8.33%;
     width: 30%;
     padding: 5px;
@@ -73,6 +120,15 @@ header{
     margin-left: 8.33%;
     padding: 15px;
 }
+
+nav{
+    height: 70px;
+    padding: 25px;
+}
+
+/*****************************************************************
+Button styles
+*****************************************************************/
 
 .button:link,
 .button:visited{
@@ -100,26 +156,21 @@ header{
     border: 1px solid #0000F1;
 }
 
-nav{
-    height: 70px;
-    padding: 25px;
+/*****************************************************************
+Features styles
+*****************************************************************/
+
+#headline-text{
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+ion-icon{
+    font-size: 300%;
+    color: #7EE1FF;
+    margin-bottom: 20px;
 }
 
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
+section p{
+    font-size: 80%;
 }
