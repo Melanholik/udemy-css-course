@@ -52,6 +52,7 @@ h2:after{
 
 section{
     padding: 100px 0;
+    clear: both;
 }
 
 /*****************************************************************
@@ -214,4 +215,55 @@ Food images styles
 .food-image img:hover{
     transform: scale(1.05);
     opacity: 1;
+}
+
+/*****************************************************************
+How to order style
+*****************************************************************/
+
+#phone-image{
+    width: 100%;
+}
+
+#phone-image-container{
+    margin-left: 10%;
+    transform: scale(1.2);
+}
+
+.order-step{
+
+}
+
+.order-step div{
+    color: #7EE1FF;
+    border: 2px solid #7EE1FF;
+    border-radius: 150px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.order-step p{
+    height: 50px;
+    margin-bottom: 70px;
+    padding-top: 5px;
+}
+.order-step:last-of-type{
+    margin-bottom: 50px;
+}
+.store-button img{
+    height: 100px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 150px;
+    transition: border 0.3s;
+}
+
+.store-button img:hover{
+    border: 2px solid #7EE1FF;
+    border-radius: 150px;
 }
