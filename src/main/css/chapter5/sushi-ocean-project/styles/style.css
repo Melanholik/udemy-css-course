@@ -41,6 +41,17 @@ h2{
     margin-bottom: 30px;
 }
 
+h3{
+    font-weight: 300;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
 h2:after{
     display: block;
     background-color: #7EE1FF;
@@ -53,6 +64,18 @@ h2:after{
 section{
     padding: 100px 0;
     clear: both;
+}
+
+.float-clearing{
+    zoom: 1;
+}
+.float-clearing:after{
+    zoom: 1;
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 /*****************************************************************
@@ -175,7 +198,7 @@ Features styles
     font-size: 100%;
     margin-bottom: 20px;
 }
-ion-icon{
+#restaurant-description ion-icon{
     font-size: 300%;
     color: #7EE1FF;
     margin-bottom: 20px;
@@ -215,6 +238,33 @@ Food images styles
 .food-image img:hover{
     transform: scale(1.05);
     opacity: 1;
+}
+
+/*****************************************************************
+Cities photo style
+*****************************************************************/
+.col-3 img{
+    width: 100%;
+}
+.city-info{
+    font-weight: 300;
+    font-size: 80%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+#cities-section ion-icon{
+    display: inline-block;
+    text-align: center;
+    font-size: 130%;
+    width: 30px;
+    color: #00475C;
+}
+
+#cities-section{
+    background-color: #e4e5d7;
 }
 
 /*****************************************************************
