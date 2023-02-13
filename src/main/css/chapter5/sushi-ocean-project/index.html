@@ -10,7 +10,7 @@
 </head>
 <body>
 <header>
-    <img src="images/sushi-logo.png" id="logo-image">
+    <img src="images/sushi-logo.png" id="logo-image" alt="sushi-logo">
     <nav id="menu-nav">
         <p id="logo-text"><a href="#">ОКЕАН СУШИ</a></p>
         <ul id="main-ul-nav">
@@ -107,7 +107,7 @@
     <h2>Мы находимся в следующих городах</h2>
     <div class="float-clearing">
         <div class="col-3">
-            <img src="images/baranovichy-city.jpg">
+            <img src="images/baranovichy-city.jpg" alt="baranovichy photo">
             <h3>Барановичи</h3>
             <div class="city-info">
                 <ion-icon name="home-outline"></ion-icon>
@@ -123,7 +123,7 @@
             </div>
         </div>
         <div class="col-3">
-            <img src="images/brest-city.jpg">
+            <img src="images/brest-city.jpg" alt="brest photo">
             <h3>Брест</h3>
             <div class="city-info">
                 <ion-icon name="home-outline"></ion-icon>
@@ -139,7 +139,7 @@
             </div>
         </div>
         <div class="col-3">
-            <img src="images/grodno-city.jpg">
+            <img src="images/grodno-city.jpg" alt="grodno photo">
             <h3>Гродно</h3>
             <div class="city-info">
                 <ion-icon name="home-outline"></ion-icon>
@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class="col-3">
-            <img src="images/minsk-city.jpg">
+            <img src="images/minsk-city.jpg" alt="minsk photo">
             <h3>Минск</h3>
             <div class="city-info">
                 <ion-icon name="home-outline"></ion-icon>
@@ -175,7 +175,7 @@
 <section id="how-to-order">
     <h2>У нас есть доставка!</h2>
     <div class="col-5" id="phone-image-container">
-        <img src="images/phone-photo.jpg" id="phone-image">
+        <img src="images/phone-photo.jpg" id="phone-image" alt="phone photo">
     </div>
     <div class="col-5">
         <div class="order-step">
@@ -190,8 +190,8 @@
             <div>3</div>
             <p>Получите ваш заказ в течении 40 мин. Приятного аппетита</p>
         </div>
-        <a href="#" class="store-button"><img src="images/apple_appstore-logo.png"></a>
-        <a href="#" class="store-button"><img src="images/googleStore-logo.jpg"></a>
+        <a href="#" class="store-button"><img src="images/apple_appstore-logo.png" alt="apple store logo"></a>
+        <a href="#" class="store-button"><img src="images/googleStore-logo.jpg" alt="google store logo"></a>
     </div>
 </section>
 <section id="feedback-section">
@@ -200,7 +200,7 @@
         <div class="col-4">
             <blockquote>
                 <cite>
-                    <img src="images/visitor-1.jpg">
+                    <img src="images/visitor-1.jpg" alt="visitor 1 photo">
                 </cite>
                 <div>
                     <p>Все было свежо. Официантки все улыбались и были внимательны. Суши, сашими, нигири - все хорошего
@@ -213,7 +213,7 @@
         <div class="col-4">
             <blockquote>
                 <cite>
-                    <img src="images/visitor-2.jpg">
+                    <img src="images/visitor-2.jpg" alt="visitor 2 photo">
                 </cite>
                 <div>
                     <p>Идеальное сочетание цены и качества. Суши невероятно вкусные и свежие, изготовлены из
@@ -227,13 +227,67 @@
         <div class="col-4">
             <blockquote>
                 <cite>
-                    <img src="images/visitor-3.jpg">
+                    <img src="images/visitor-3.jpg" alt="visitor 3 photo">
                 </cite>
                 <div>
                     <p>Отличное сочетание вкусов и цветов. Заказываю со своей девушкой не первый раз,
                         всегда качественно, быстро и вкусно</p>
                 </div>
             </blockquote>
+        </div>
+    </div>
+</section>
+<section id="contact-form-section">
+    <h2>Рады будем ответить на ваши вопросы</h2>
+    <div id="contact-form">
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <label for="input-name">Имя</label>
+            </div>
+            <div class="col-6">
+                <input type="text" name="name" id="input-name" placeholder="Введите имя">
+            </div>
+        </div>
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <label for="input-email">Email</label>
+            </div>
+            <div class="col-6">
+                <input type="email" name="email" id="input-email" placeholder="Введите адрес почты">
+            </div>
+        </div>
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <label for="select-topic">Выберите тему</label>
+            </div>
+            <div class="col-6">
+                <select id="select-topic" name="topic">
+                    <option value="feedback">Отзыв</option>
+                    <option value="question">Вопрос</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <label for="checkbox-news">Хочу получать новости о скидках</label>
+            </div>
+            <div class="col-6">
+                <input type="checkbox" name="checkbox-news" id="checkbox-news" checked> Да конечно
+            </div>
+        </div>
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <label for="textarea-text">Напишите текст вашего письма</label>
+            </div>
+            <div class="col-6">
+                <textarea name="text" id="textarea-text" placeholder="Введите текст"></textarea>
+            </div>
+        </div>
+        <div class="form-row float-clearing">
+            <div class="col-6">
+                <input type="submit" value="Отправить">
+            </div>
         </div>
     </div>
 </section>
