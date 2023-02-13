@@ -84,6 +84,7 @@ Header styles
 
 header{
     background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 241, 0.45)), url("../images/header-background.jpg");
+    background-attachment: fixed;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -316,4 +317,45 @@ How to order style
 .store-button img:hover{
     border: 2px solid #7EE1FF;
     border-radius: 150px;
+}
+
+/*****************************************************************
+Feedback style
+*****************************************************************/
+#feedback-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url("../images/background-feedback.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+cite{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+cite img{
+    width: 50%;
+    border: 2px solid #7EE1FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+blockquote div:before{
+    content: "\201C";
+    font-size: 300%;
+}
+
+blockquote div:after{
+    content: "\201D";
+    font-size: 300%;
+    line-height: 150%;
+}
+
+blockquote{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 120%;
+    line-height: 150%;
+    color: white;
 }
