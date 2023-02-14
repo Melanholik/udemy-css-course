@@ -15,6 +15,13 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .col-1 {
     width: 8.33%;
 }
@@ -75,6 +82,8 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 h3 {
@@ -180,11 +189,12 @@ header {
 #header-title {
     color: #7EE1FF;
     margin-left: 8.33%;
-    width: 30%;
+    max-width: 60%;
     padding: 5px;
     text-transform: uppercase;
-    letter-spacing: 0.178em;
-    font-size: 1.8em;
+    letter-spacing: 1vw;
+    font-size: 3vw;
+    line-height: 5vw;
     font-weight: 400;
     font-style: normal;
 }
@@ -244,6 +254,8 @@ Features styles
     text-align: center;
     font-size: 100%;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #restaurant-description ion-icon {
@@ -325,12 +337,11 @@ How to order style
 *****************************************************************/
 
 #phone-image {
-    width: 100%;
+    width: 90%;
 }
 
 #phone-image-container {
-    margin-left: 10%;
-    transform: scale(1.2);
+    padding: 1% 0 0 5%;
 }
 
 .order-step {
@@ -353,7 +364,7 @@ How to order style
 
 .order-step p {
     height: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 15%;
     padding-top: 5px;
 }
 
@@ -362,7 +373,7 @@ How to order style
 }
 
 .store-button img {
-    height: 100px;
+    width: 45%;
     margin-right: 10px;
     border: 2px solid white;
     border-radius: 150px;
@@ -492,4 +503,34 @@ footer {
     color: #7EE1FF;
     text-transform: uppercase;
     font-size: 200%;
+}
+
+/*****************************************************************
+Media query style
+*****************************************************************/
+@media only screen and (max-width: 1230px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 50%;
+    }
+
+    .button-order {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .button-order {
+        margin-bottom: 20px;
+    }
+
+    #contact-form {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
