@@ -137,11 +137,11 @@ header {
 }
 
 #logo-image {
-    height: 50px;
+    height: 57px;
     width: auto;
     float: left;
     margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 3px;
 }
 
 #logo-text {
@@ -157,28 +157,61 @@ header {
 
 #main-ul-nav li {
     display: inline;
-    padding: 10px 15px 10px 15px;
+    margin-right: 50px;
     font-size: 0.8em;
     opacity: 0.6;
     transition: opacity 0.5s, border 0.5s;
-    border: 1px solid rgba(0, 0, 0, 0);
-    border-radius: 150px;
 }
 
 #main-ul-nav li:hover,
 #main-ul-nav li:active {
     opacity: 1;
-    border: 1px solid #7EE1FF;
 }
 
 #logo-text a {
     letter-spacing: 5px;
+    text-decoration: none;
 }
+
+#sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7EE1FF;
+    z-index: 999;
+    box-shadow: 0 2px 2px #d6baba;
+}
+
+#sticky-nav #main-ul-nav li {
+    text-decoration: none;
+    display: inline;
+    margin-right: 50px;
+    font-size: 0.8em;
+    opacity: 0.6;
+    transition: opacity 0.5s, border 0.5s;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0;
+}
+
+#sticky-nav #main-ul-nav li:hover,
+#sticky-nav #main-ul-nav li:active {
+    opacity: 1;
+    border-bottom: 2px solid #0000F1;
+}
+
 
 #main-ul-nav li a,
 #logo-text a {
     text-decoration: none;
     color: #7EE1FF;
+    text-transform: uppercase;
+}
+
+#sticky-nav #main-ul-nav li a,
+#sticky-nav #logo-text a {
+    text-decoration: none;
+    color: #0000F1;
     text-transform: uppercase;
 }
 
@@ -206,8 +239,7 @@ header {
 }
 
 nav {
-    height: 70px;
-    padding: 25px;
+    height: 63px;
 }
 
 /*****************************************************************
