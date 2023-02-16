@@ -12,6 +12,7 @@ $(document).ready(function () {
         offset: 60
     });
 
+    //buttons and nav links click
     $(".button-order").click(function () {
         $("html, body").animate({scrollTop: $("#how-to-order").offset().top}, 800);
     });
@@ -56,6 +57,43 @@ $(document).ready(function () {
                 }
             }
         });
+
+    //animation
+    new Waypoint({
+        element: document.getElementById('restaurant-description'),
+        handler: function () {
+            $(".animation-spawn").addClass(("animate__animated animate__fadeIn"))
+        },
+        offset: 500
+    });
+
+    new Waypoint({
+        element: document.getElementById('cities-section'),
+        handler: function () {
+            $(".animation-fadeInRight").addClass(("animate__animated animate__fadeInRight"))
+        },
+        offset: 400
+    });
+
+    new Waypoint({
+        element: document.getElementById('how-to-order'),
+        handler: function () {
+            $(".animation-fadeInUp").addClass(("animate__animated animate__fadeInUp"))
+        },
+        offset: 500
+    });
+
+    new Waypoint({
+        element: document.getElementById('header'),
+        handler: function (direction) {
+            if (direction === 'up') {
+                $(".animation-heartBeat").addClass(("animate__animated animate__heartBeat"));
+            } else {
+                $(".animation-heartBeat").removeClass("animate__animated animate__heartBeat")
+            }
+        },
+        offset: -500
+    });
 
 })
 

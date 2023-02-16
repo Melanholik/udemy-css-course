@@ -563,3 +563,17 @@ Media query style
         margin: 0 auto;
     }
 }
+
+/*****************************************************************
+Animation style
+*****************************************************************/
+
+.animation-spawn,
+.animation-fadeInRight,
+.animation-fadeInUp {
+    opacity: 0;
+}
+
+.animation-fadeInRight {
+    animation-duration: 0.5s;
+}
