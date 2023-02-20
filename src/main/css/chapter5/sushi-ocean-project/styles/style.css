@@ -240,6 +240,31 @@ nav {
     height: 63px;
 }
 
+.mobile-nav-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    margin: 10px 10px;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon {
+    font-size: 200%;
+    color: #7EE1FF;
+
+}
+
+#sticky-nav ion-icon{
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #0000F1;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+
 /*****************************************************************
 Button styles
 *****************************************************************/
@@ -561,6 +586,31 @@ Media query style
     #contact-form {
         width: 95%;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+
+    .mobile-nav-icon {
+        display: inline-block;
+    }
+
+    .mobile-nav-icon ion-icon{
+        color: #7EE1FF;
+    }
+
+    #main-ul-nav{
+        float: right;
+        margin-top: 40px;
+    }
+
+    #main-ul-nav li{
+        display: block;
+    }
+
+    #main-ul-nav li a:link,
+    #main-ul-nav li a:visited{
+        display: block;
     }
 }
 
