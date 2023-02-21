@@ -95,6 +95,21 @@ $(document).ready(function () {
         offset: -500
     });
 
+    $(".mobile-nav-icon ion-icon").click(function () {
+
+        let icon = $(".mobile-nav-icon ion-icon");
+
+        if (icon.attr("name") === "menu-outline") {
+            icon.attr("name", "close-outline");
+            $("nav").animate({height: "230px"}, 400);
+        } else {
+            icon.attr("name", "menu-outline");
+            $("nav").animate({height: "70px"}, 400);
+        }
+        $("#main-ul-nav").slideToggle(500);
+
+    });
+
 })
 
 

@@ -181,10 +181,11 @@ header {
     box-shadow: 0 2px 2px #d6baba;
 }
 
-#sticky-nav #main-ul-nav li {
+#sticky-nav #main-ul-nav ul li {
     text-decoration: none;
     display: inline;
-    margin-right: 50px;
+    margin-right: 0;
+    margin-bottom: 10px;
     font-size: 0.8em;
     opacity: 0.6;
     transition: opacity 0.5s, border 0.5s;
@@ -255,7 +256,7 @@ nav {
 
 }
 
-#sticky-nav ion-icon{
+#sticky-nav ion-icon {
     position: fixed;
     top: 0;
     right: 0;
@@ -589,28 +590,36 @@ Media query style
     }
 }
 
-@media only screen and (max-width: 1055px) {
+@media only screen and (max-width: 1070px) {
 
     .mobile-nav-icon {
         display: inline-block;
     }
 
-    .mobile-nav-icon ion-icon{
+    .mobile-nav-icon ion-icon {
         color: #7EE1FF;
     }
 
-    #main-ul-nav{
+    #main-ul-nav {
         float: right;
         margin-top: 40px;
+        display: none;
     }
 
-    #main-ul-nav li{
+    #main-ul-nav li {
         display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 
     #main-ul-nav li a:link,
-    #main-ul-nav li a:visited{
+    #main-ul-nav li a:visited {
         display: block;
+    }
+
+    #sticky-nav #main-ul-nav li:hover,
+    #sticky-nav #main-ul-nav li:active {
+        border-bottom: 0;
     }
 }
 
